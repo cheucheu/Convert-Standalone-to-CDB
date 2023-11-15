@@ -39,7 +39,7 @@ select name, open_mode from v\$pdbs;
 prompt run noncdb_to_pdb.sql
 ALTER SESSION SET CONTAINER=$NONPDB;
 ALTER SESSION SET "_OLD_CONNECT_BY_ENABLED"=FALSE;
-ALTER SESSION SET optimizer_features_enable=11.2.0.4,
+ALTER SESSION SET optimizer_features_enable=11.2.0.4;
 show con_name
 @$ORACLE_HOME/rdbms/admin/noncdb_to_pdb.sql
 alter pluggable database PMM8BDD open;
