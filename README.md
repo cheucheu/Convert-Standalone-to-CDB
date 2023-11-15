@@ -19,9 +19,10 @@ Second Step: Verify the compatibility of the standalone to convert as a PDB
 Third Step : Convert the standalone as a PDB into the CDB
 ---------------------------------------------------------
 + The shell must be executed with the SID of the CDB !
-+ A pluggable DB is created by COPY with the definition XML of the standalone DB.
++ A pluggable DB is created by ** COPY ** with the definition XML of the standalone DB.
   CREATE PLUGGABLE DATABASE $NONPDB  USING '/opt/oracle/dba/tools/$NONPDB.xml'
 COPY file_name_convert=('/oradata/$NONPDB','/oradata/$ORACLE_SID/$NONPDB');
++ Inside the directory of the new PDB, the directory containing the tempfile must be created before !  - > to investigate
 + After the creation, the script @?/rdbms/admin/noncdb_to_pdb.sql must be executed inside the  new PDB of the STANDALONE DB 
 + To workaround the problem "	Noncdb_to_pdb.sql Script Taking Too Long To Run (Doc ID 2814341.1)", set these parameters
 
