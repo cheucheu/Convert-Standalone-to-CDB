@@ -1,4 +1,4 @@
-"# 19c Convert in place  StandaloneDB to CDB" 
+"# 19c Convert in place  Standalone DB to CDB" 
 
 First Step : Create the CDB 
 -----------------------------
