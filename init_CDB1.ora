@@ -1,0 +1,18 @@
+sga_target=1G
+pga_aggregate_target=500M
+audit_file_dest="/oradata/CDB1/adm/adump"
+audit_trail=db
+compatible=19.4.0
+control_files=("/oradata/CDB1/control_01.dbf","/oradata/CDB1/fast_recovery_area/control_02.dbf")
+db_block_size=8192
+db_domain=localdomain
+db_name="CDB1"
+db_recovery_file_dest="/oradata/CDB1/fast_recovery_area"
+db_recovery_file_dest_size=4560m
+diagnostic_dest=/u01/app/oracle
+dispatchers="(PROTOCOL=TCP) (SERVICE=newcdbXDB)"
+enable_pluggable_database=true
+open_cursors=300
+processes=300
+remote_login_passwordfile=EXCLUSIVE
+undo_tablespace=UNDO
