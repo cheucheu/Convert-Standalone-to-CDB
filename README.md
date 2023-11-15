@@ -1,4 +1,4 @@
-"# 19c Convert in place  Standalone DB to CDB" 
+"# 19c Convert in place  Standalone DB to PDB/CDB" 
 
 First Step : Create the CDB 
 -----------------------------
@@ -16,7 +16,7 @@ Second Step: Verify the compatibility of the standalone to convert as a PDB
 
 - Run the shell : check_compatibility_pdb.sh
 
-Third Step : Convert the standalone as a PDB into the CBD
+Third Step : Convert the standalone as a PDB into the CDB
 ---------------------------------------------------------
 + The shell must be executed with the SID of the CDB !
 + A pluggable DB is created by COPY with the definition XML of the standalone DB.
